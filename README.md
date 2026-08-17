@@ -53,7 +53,11 @@ Built for students, part-time workers, and freelancers — people whose income v
 
 **Stack:** `Python` `Streamlit` `Claude API` `SQLite` `bcrypt` `Plotly` `Pandas`
 
+<<<<<<< HEAD
 [![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://personal-finance-tracker-gzrsskybpf6gzbctsddpug.streamlit.app/)
+=======
+[![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://personal-finance-tracker.streamlit.app)
+>>>>>>> 349a25a5e0ac218fe59823e80f247ad4e379c2bc
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github)](https://github.com/Wahab16-blip/personal-finance-tracker)
 
 ---
@@ -107,3 +111,12 @@ Week 6 🔄  PostgreSQL, Docker, advanced deployment
 ---
 
 *Building something useful every week.*
+<<<<<<< HEAD
+=======
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](www.linkedin.com/in/wahab-olanipekun-a878373a7)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:olanipekunwahab1@gmail.com)
+
+---
+
+*"Build things people actually use."*
+>>>>>>> 349a25a5e0ac218fe59823e80f247ad4e379c2bc
