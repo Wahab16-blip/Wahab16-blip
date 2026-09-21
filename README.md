@@ -8,12 +8,13 @@
 
 I am a computer science student with a focused self-directed curriculum in AI engineering. While studying for my degree, I build and ship real AI-powered applications — not demos, not tutorials, but deployed products that solve genuine problems.
 
-In five weeks I progressed from Python fundamentals to building two full-stack AI applications, both live on the internet.
+In six weeks I progressed from Python fundamentals to building three full-stack AI applications, all live on the internet.
 
 - 🎓 **University of Sunderland** — BSc Computer Science (Year 3, 2026)
 - 🤖 **Focus** — AI Engineering, LLM integration, full-stack Python
 - 🚀 **Goal** — Building AI-powered tools that are genuinely useful and monetisable
 - 📍 **Based in** — United Kingdom
+- 🌍 **Originally from** — Nigeria
 
 ---
 
@@ -31,7 +32,7 @@ A multi-tool AI agent that takes squad data, fetches live weather, searches a ta
 - Side-by-side report comparison with formation pitch display
 - Password-protected deployment
 
-**Stack:** `Python` `Streamlit` `Claude API` `FastAPI` `RAG` `sentence-transformers` `SQLite`
+**Stack:** `Python` `Streamlit` `Claude API` `FastAPI` `RAG` `sentence-transformers` `PostgreSQL`
 
 [![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://football-tactical-analyst-39lecabfsgfatuwaat2cce.streamlit.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github)](https://github.com/Wahab16-blip/football-tactical-analyst)
@@ -41,7 +42,7 @@ A multi-tool AI agent that takes squad data, fetches live weather, searches a ta
 ### 💰 Personal Finance Tracker
 > Full-stack AI finance tool for people with variable income
 
-Built for students, part-time workers, and freelancers — people whose income varies month to month. Tracks both expenses and income, gives AI-powered personalised advice based on real spending data, and generates weekly summary reports.
+Built for students, part-time workers, and freelancers — people whose income varies month to month. Tracks both expenses and income, gives AI-powered personalised advice based on real spending data, and generates weekly and period summary reports.
 
 **Key features:**
 - AI auto-categorisation of expenses via Claude
@@ -49,16 +50,35 @@ Built for students, part-time workers, and freelancers — people whose income v
 - Net balance and savings rate dashboard with Plotly charts
 - AI Advisor answers questions using your actual financial data as context
 - Finds cheaper alternatives to specific expenses
-- bcrypt authentication + SQLite database with full user isolation
+- Period Review — AI reports for any custom date range
+- bcrypt authentication + PostgreSQL (Supabase) database
 
-**Stack:** `Python` `Streamlit` `Claude API` `SQLite` `bcrypt` `Plotly` `Pandas`
+**Stack:** `Python` `Streamlit` `Claude API` `PostgreSQL` `Supabase` `bcrypt` `Plotly` `Pandas`
 
-<<<<<<< HEAD
-[![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://personal-finance-tracker-gzrsskybpf6gzbctsddpug.streamlit.app/)
-=======
-[![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://personal-finance-tracker.streamlit.app)
->>>>>>> 349a25a5e0ac218fe59823e80f247ad4e379c2bc
+[![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://personal-finance-tracker-gzrsskybpf6gzbctsddpug.streamlit.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github)](https://github.com/Wahab16-blip/personal-finance-tracker)
+
+---
+
+### ⚖️ Legal Document Analyser
+> AI-powered contract analysis for legal professionals — UK and Nigerian law
+
+Built for lawyers, judges, and legal professionals who work with PDF contracts, Word documents, and even photos of paper documents. Extracts key clauses, flags risky legal terms, and answers questions about the document using RAG.
+
+**Key features:**
+- Upload PDF, Word (.docx), or photos of paper documents
+- Claude Vision extracts text from photographs of contracts
+- 7-section AI analysis: summary, parties, obligations, dates, payments, termination, jurisdiction
+- Risk flag detection for 25+ risky legal terms (indemnification, non-compete, perpetual, etc.)
+- RAG-powered Q&A — ask any question about the uploaded document
+- UK vs Nigerian law comparison facts on every page load
+- Document History with past analyses and question logs
+- bcrypt authentication + PostgreSQL (Supabase) with CASCADE DELETE
+
+**Stack:** `Python` `Streamlit` `Claude API` `Claude Vision` `RAG` `PyMuPDF` `python-docx` `PostgreSQL` `Supabase` `bcrypt` `sentence-transformers`
+
+[![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=flat&logo=streamlit)](https://legal-document-analyser-bgcwbwskxuqmsf3yrzdrss.streamlit.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github)](https://github.com/Wahab16-blip/legal-document-analyser)
 
 ---
 
@@ -66,18 +86,19 @@ Built for students, part-time workers, and freelancers — people whose income v
 
 | Category | Technologies |
 |---|---|
-| **AI / LLMs** | Anthropic Claude API, Groq / Llama, RAG Pipelines, Embeddings, Multi-tool Agents, Prompt Engineering |
-| **Backend** | Python, FastAPI, SQLite, REST APIs, bcrypt Authentication |
+| **AI / LLMs** | Anthropic Claude API, Claude Vision, Groq / Llama, RAG Pipelines, Embeddings, Multi-tool Agents, Prompt Engineering |
+| **Backend** | Python, FastAPI, PostgreSQL, SQLite, psycopg2, bcrypt, REST APIs, Dynamic SQL |
 | **Frontend** | Streamlit, Plotly, Pandas, HTML / CSS |
-| **DevOps** | Git, GitHub, Streamlit Cloud, dotenv / Secrets Management |
+| **Document Processing** | PyMuPDF, python-docx, base64 image encoding, Claude Vision OCR |
+| **DevOps** | Git, GitHub, Streamlit Cloud, Supabase, dotenv / Secrets Management |
 
 ---
 
 ## Currently Building
 
-- 🔄 **Finance Tracker v1.1** — Period Review feature (custom date range reports)
 - 🔄 **Football Analyst v1.1** — Opposition analysis module with real team data
-- 📖 **Learning** — PostgreSQL migration, Docker, React frontend
+- 🔄 **Finance Tracker v1.1** — Currency selection for international users
+- 📖 **Learning** — React frontend, Docker, advanced PostgreSQL
 
 ---
 
@@ -89,9 +110,10 @@ Self-directed AI engineering curriculum completed alongside university coursewor
 Week 1 ✅  Python fundamentals — variables, functions, data structures
 Week 2 ✅  APIs, JSON, file I/O, first LLM calls (Anthropic, Groq)
 Week 3 ✅  Embeddings, RAG pipelines, multi-tool AI agents
-Week 4 ✅  Streamlit web apps, FastAPI, deployment to Streamlit Cloud
-Week 5 ✅  SQLite databases, bcrypt authentication, full-stack AI apps
-Week 6 🔄  PostgreSQL, Docker, advanced deployment
+Week 4 ✅  Streamlit web apps, FastAPI backends, Streamlit Cloud deployment
+Week 5 ✅  SQLite → PostgreSQL, bcrypt auth, full-stack AI apps
+Week 6 ✅  Supabase cloud migration, Claude Vision, document processing
+Week 7 🔄  React frontend — replacing Streamlit with professional UIs
 ```
 
 ---
@@ -105,18 +127,9 @@ Week 6 🔄  PostgreSQL, Docker, advanced deployment
 ## Connect
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-6366F1?style=flat)](https://wahab16-blip.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/wahab-olanipekun)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/wahab-olanipekun-a878373a7)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat&logo=gmail)](mailto:olanipekunwahab1@gmail.com)
 
 ---
 
 *Building something useful every week.*
-<<<<<<< HEAD
-=======
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](www.linkedin.com/in/wahab-olanipekun-a878373a7)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:olanipekunwahab1@gmail.com)
-
----
-
-*"Build things people actually use."*
->>>>>>> 349a25a5e0ac218fe59823e80f247ad4e379c2bc
